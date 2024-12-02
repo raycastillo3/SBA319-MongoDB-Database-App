@@ -12,8 +12,8 @@ app.get("/", (req, res) => {
 }); 
 
 //ROUTES:
-// import posts from "./routes/posts.mjs"
-// app.use("/posts", posts)
+import posts from "./routes/posts.mjs"         
+app.use("/posts", posts)
 
 //Global error handling
 app.use((err, _req, res, next) =>{
