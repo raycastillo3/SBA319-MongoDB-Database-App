@@ -14,7 +14,13 @@ router.post("/", async (req, res) => {
 }); 
 
 router.get("/", async (req, res) => {
-    res.send("many posts")
+    try {
+        const result = await Post.find({}); 
+        res.status(200).send(result);
+    } catch (err) {
+        res.status(404).send("Not posts yet");
+        console.log(err);
+    }
 })
 router.get("/:id", async (req, res) => {
     try {
