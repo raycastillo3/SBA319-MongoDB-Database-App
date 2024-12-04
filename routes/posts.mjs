@@ -3,15 +3,6 @@ import Post from "../schemas/PostSchema.mjs";
 
 const router = express.Router(); 
 
-router.post("/", async (req, res) => {
-    let newPost = req.body; 
-    try {
-        const result = await Post.create(newPost); 
-        res.status(204).send(result);      
-    } catch (err) {
-        res.status(500).send(err);
-    }
-}); 
 
 router.get("/", async (req, res) => {
     try {
