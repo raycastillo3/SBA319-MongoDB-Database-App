@@ -1,11 +1,11 @@
 ## ROUTES: 
-http://localhost:5050/users/ <b>
-http://localhost:5050/comments/ <b>
+http://localhost:5050/users/ <b/>
+http://localhost:5050/comments/ <b/>
 http://localhost:5050/posts/
 
 
 ### Requirements:
-Use at least three different data collections within the database (such as users, posts, or comments).
+[Use at least three different data collections within the database (such as users, posts, or comments).](schemas/CommentSchema.mjs)
 
 Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database.
 
@@ -22,4 +22,4 @@ Include sensible MongoDB data validation rules for at least one data collection.
 Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
 
 #### Side note: 
-This backend is pulling data from an real application I am working
+This backend is pulling data from an real application I am working on. Thats why I only added the POST route to the comments and not the users or posts as that would mess with my application.
