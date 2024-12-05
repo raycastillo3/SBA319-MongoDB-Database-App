@@ -3,7 +3,6 @@ import Post from "../schemas/PostSchema.mjs";
 
 const router = express.Router(); 
 
-
 router.get("/", async (req, res) => {
     try {
         const result = await Post.find({}); 

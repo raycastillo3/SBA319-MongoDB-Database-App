@@ -26,10 +26,11 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
     try {
         const result = await Comment.findById(req.params.id);
-        res.status(200).send(result)
+        if (!result) return res.status(404).send("Comment not found");
+        else return res.status(200).send(result);
     } catch (err) {
-        res.status(404).send("Comment not found");
-        console.log(err);
+        console.log(err.message);
+        res.status(500).send("Error Finding Comment");
     }
 })
 
