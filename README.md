@@ -1,5 +1,3 @@
-
-
 ## ROUTES: 
 http://localhost:5050/users/
 http://localhost:5050/comments/
@@ -18,3 +16,10 @@ Create PATCH or PUT routes for data, as appropriate, using appropriate update co
 Create DELETE routes for data, as appropriate, using appropriate delete commands to remove data from the database. At least one data collection should allow for client deletion via a DELETE request.
 
 Include sensible indexes for any and all fields that are queried frequently. For fields that may have a high write-to-read ratio, you may forgo indexes for performance considerations. Make comments of this where applicable.
+
+Include sensible MongoDB data validation rules for at least one data collection.
+
+Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
+
+#### Side note: 
+This backend is pulling data from an real application I am working
