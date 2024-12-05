@@ -1,6 +1,6 @@
 ## ROUTES: 
-http://localhost:5050/users/
-http://localhost:5050/comments/
+http://localhost:5050/users/ <b>
+http://localhost:5050/comments/ <b>
 http://localhost:5050/posts/
 
 
